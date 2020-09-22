@@ -4,5 +4,5 @@ from .models import Api
 
 
 class ApiViewSet(viewsets.ModelViewSet):
-    queryset = Api.objects.all()
+    queryset = Api.objects.order_by('-created_at')
     serializer_class = ApiSerializers
