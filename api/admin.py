@@ -2,4 +2,4 @@ from django.contrib import admin
 from .models import Api
 
 
-admin.register.site(Api)
+admin.site.register(Api)
