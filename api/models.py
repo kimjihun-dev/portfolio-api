@@ -11,7 +11,6 @@ class Api(models.Model):
     contentImg = models.URLField(verbose_name='메인이미지주소')
     site_view = models.URLField(verbose_name='사이트 주소')
     code_view = models.URLField(verbose_name='깃헙 주소')
-    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
